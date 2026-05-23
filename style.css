@@ -439,3 +439,56 @@ section p {
   line-height: 1.5;
 
 }
+/* ÍCONES CONTATO */
+
+.social-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  background: #0f172a;
+
+  padding: 15px;
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+
+}
+
+.social-item:hover {
+
+  transform: translateX(5px);
+
+  background: #1e293b;
+
+}
+
+.social-item i {
+
+  font-size: 28px;
+
+  color: #38bdf8;
+
+}
+
+.social-item a {
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+}
+
+.social-item span {
+
+  font-size: 18px;
+
+}
