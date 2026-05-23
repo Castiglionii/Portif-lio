@@ -417,15 +417,19 @@ section h1 {
   }
 
   .btn,
-  .voltar {
+.voltar {
 
-    width: 100%;
+  width: calc(100% - 40px);
 
-    text-align: center;
+  text-align: center;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-  }
+  margin-left: 20px;
+
+  margin-right: 20px;
+
+}
 
   .galeria {
 
