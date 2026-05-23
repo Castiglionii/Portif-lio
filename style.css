@@ -1,11 +1,18 @@
 body {
+
   margin: 0;
+
   font-family: Arial, sans-serif;
+
   background: #0f172a;
+
   color: white;
+
 }
 
-/* MENU */
+/* =========================
+   MENU
+========================= */
 
 .menu {
 
@@ -13,15 +20,13 @@ body {
 
   justify-content: center;
 
-  align-items: center;
-
-  gap: 25px;
+  gap: 20px;
 
   background: #020617;
 
-  padding: 18px;
+  padding: 15px;
 
-  box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+  flex-wrap: wrap;
 
 }
 
@@ -41,36 +46,27 @@ body {
 
   color: white;
 
-  transform: scale(1.1);
-
 }
 
 .menu .active {
 
   border-bottom: 2px solid #38bdf8;
 
-  padding-bottom: 5px;
-
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .header {
 
   text-align: center;
 
-  padding: 70px 20px;
+  padding: 50px 20px;
 
-  background: linear-gradient(
-    135deg,
-    #0f172a,
-    #1e293b,
-    #0f172a
-  );
+  background: linear-gradient(135deg, #1e293b, #0f172a);
 
 }
-
-/* FOTO PERFIL */
 
 .perfil {
 
@@ -82,76 +78,55 @@ body {
 
   object-fit: cover;
 
-  object-position: center;
-
   border: 4px solid #38bdf8;
 
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.6);
-
-  display: block;
-
-  margin: 0 auto 20px auto;
-
-  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(56,189,248,0.4);
 
 }
-
-.perfil:hover {
-
-  transform: scale(1.05);
-
-}
-
-/* TÍTULOS */
 
 .header h1 {
 
-  font-size: 50px;
+  margin-top: 20px;
 
-  margin-top: 10px;
-
-  margin-bottom: 10px;
+  font-size: 42px;
 
 }
 
 .header p {
 
-  font-size: 24px;
+  font-size: 20px;
 
-  color: #38bdf8;
+  color: #cbd5e1;
 
 }
 
-/* SEÇÕES */
+/* =========================
+   SEÇÕES
+========================= */
 
 section {
-
-  padding: 60px 20px;
 
   max-width: 1000px;
 
   margin: auto;
 
-}
-
-section h1,
-section h2 {
-
-  font-size: 42px;
-
-  margin-bottom: 20px;
+  padding: 40px 20px;
 
 }
 
-section p {
+section h1 {
 
-  line-height: 1.8;
+  text-align: center;
 
-  font-size: 18px;
+  margin-bottom: 30px;
+
+  font-size: 36px;
 
 }
 
-/* CARDS */
+/* =========================
+   CARDS
+========================= */
 
 .card {
 
@@ -161,23 +136,23 @@ section p {
 
   border-radius: 15px;
 
-  margin-top: 25px;
+  margin-top: 20px;
 
-  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: 0.3s;
 
 }
 
 .card:hover {
 
-  transform: translateY(-10px);
-
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.3);
+  transform: translateY(-5px);
 
 }
 
-/* BOTÕES */
+/* =========================
+   BOTÕES
+========================= */
 
 .btn {
 
@@ -191,9 +166,9 @@ section p {
 
   color: black;
 
-  border-radius: 8px;
-
   text-decoration: none;
+
+  border-radius: 8px;
 
   font-weight: bold;
 
@@ -205,11 +180,11 @@ section p {
 
   background: white;
 
-  transform: scale(1.05);
-
 }
 
-/* BOTÃO VOLTAR */
+/* =========================
+   VOLTAR
+========================= */
 
 .voltar {
 
@@ -229,19 +204,11 @@ section p {
 
   font-weight: bold;
 
-  transition: 0.3s;
-
 }
 
-.voltar:hover {
-
-  background: white;
-
-  transform: scale(1.05);
-
-}
-
-/* GALERIA */
+/* =========================
+   GALERIA
+========================= */
 
 .galeria {
 
@@ -249,276 +216,9 @@ section p {
 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-  gap: 20px;
+  gap: 25px;
 
 }
-
-.galeria img {
-
-  width: 100%;
-
-  height: 300px;
-
-  object-fit: cover;
-
-  border-radius: 15px;
-
-  transition: 0.4s;
-
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-
-}
-
-.galeria img:hover {
-
-  transform: scale(1.05);
-
-}
-
-/* ANIMAÇÃO */
-
-.fade-in {
-
-  opacity: 0;
-
-  transform: translateY(20px);
-
-  animation: fadeIn 1s ease forwards;
-
-}
-
-@keyframes fadeIn {
-
-  to {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
-  }
-
-}
-
-.fade-in:nth-child(1) {
-
-  animation-delay: 0.2s;
-
-}
-
-.fade-in:nth-child(2) {
-
-  animation-delay: 0.4s;
-
-}
-
-.fade-in:nth-child(3) {
-
-  animation-delay: 0.6s;
-
-}
-
-.fade-in:nth-child(4) {
-
-  animation-delay: 0.8s;
-
-}
-
-/* =========================
-   RESPONSIVO ANDROID
-========================= */
-
-@media (max-width: 768px) {
-
-  body {
-
-    overflow-x: hidden;
-
-  }
-
-  /* MENU */
-
-  .menu {
-
-    flex-direction: column;
-
-    gap: 10px;
-
-    padding: 15px;
-
-    text-align: center;
-
-  }
-
-  .menu a {
-
-    width: 100%;
-
-    padding: 10px 0;
-
-    background: #0f172a;
-
-    border-radius: 8px;
-
-  }
-
-  /* HEADER */
-
-  .header {
-
-    padding: 40px 15px;
-
-  }
-
-  .perfil {
-
-    width: 120px;
-
-    height: 120px;
-
-  }
-
-  .header h1 {
-
-    font-size: 28px;
-
-    line-height: 1.3;
-
-  }
-
-  .header p {
-
-    font-size: 16px;
-
-  }
-
-  /* SEÇÕES */
-
-  section {
-
-    padding: 25px 15px;
-
-  }
-
-  section h1,
-  section h2 {
-
-    font-size: 26px;
-
-    text-align: center;
-
-  }
-
-  section p {
-
-    font-size: 15px;
-
-    line-height: 1.6;
-
-    text-align: center;
-
-  }
-
-  /* CARDS */
-
-  .card {
-
-    padding: 18px;
-
-    margin-top: 18px;
-
-    border-radius: 12px;
-
-  }
-
-  .card:hover {
-
-    transform: none;
-
-  }
-
-  /* BOTÕES */
-
-  .btn,
-  .voltar {
-
-    width: 100%;
-
-    text-align: center;
-
-    box-sizing: border-box;
-
-    padding: 14px;
-
-    font-size: 16px;
-
-  }
-
-  /* GALERIA */
-
-  .galeria {
-
-    grid-template-columns: 1fr;
-
-  }
-
-  .foto-card img {
-
-    height: 250px;
-
-  }
-
-  /* CONTATO */
-
-  .social-item {
-
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 10px;
-
-  }
-
-  .social-item i {
-
-    font-size: 24px;
-
-  }
-
-  .social-item a,
-  .social-item span {
-
-    font-size: 16px;
-
-    word-break: break-word;
-
-  }
-
-}
-/* MENSAGEM NOVOS PROJETOS */
-
-.mensagem-projeto {
-
-  margin-top: 40px;
-
-  background: #1e293b;
-
-  border: 2px solid #38bdf8;
-
-  padding: 20px;
-
-  border-radius: 15px;
-
-  text-align: center;
-
-  font-size: 20px;
-
-  color: #38bdf8;
-
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
-
-}
-/* CARD DAS FOTOS */
 
 .foto-card {
 
@@ -530,15 +230,13 @@ section p {
 
   text-align: center;
 
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-
-  transition: 0.4s;
+  transition: 0.3s;
 
 }
 
 .foto-card:hover {
 
-  transform: translateY(-8px);
+  transform: translateY(-5px);
 
 }
 
@@ -550,15 +248,13 @@ section p {
 
   object-fit: cover;
 
-  border-radius: 10px;
+  border-radius: 15px;
 
 }
 
 .foto-card p {
 
   margin-top: 15px;
-
-  font-size: 16px;
 
   color: #cbd5e1;
 
@@ -567,7 +263,7 @@ section p {
 }
 
 /* =========================
-   CONTATO ÍCONES
+   CONTATO
 ========================= */
 
 .social-item {
@@ -594,8 +290,6 @@ section p {
 
   background: #334155;
 
-  transform: translateX(5px);
-
 }
 
 .social-item i {
@@ -619,5 +313,138 @@ section p {
 .social-item span {
 
   font-size: 18px;
+
+}
+
+/* =========================
+   ANIMAÇÃO
+========================= */
+
+.fade-in {
+
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  animation: fadeIn 1s ease forwards;
+
+}
+
+@keyframes fadeIn {
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+}
+
+/* =========================
+   RESPONSIVO CELULAR
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .menu {
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+  }
+
+  .menu a {
+
+    width: 90%;
+
+    text-align: center;
+
+    background: #1e293b;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+  }
+
+  .header {
+
+    padding: 35px 15px;
+
+  }
+
+  .perfil {
+
+    width: 130px;
+
+    height: 130px;
+
+  }
+
+  .header h1 {
+
+    font-size: 28px;
+
+  }
+
+  .header p {
+
+    font-size: 16px;
+
+  }
+
+  section {
+
+    padding: 25px 15px;
+
+  }
+
+  section h1 {
+
+    font-size: 28px;
+
+  }
+
+  .card {
+
+    padding: 18px;
+
+  }
+
+  .btn,
+  .voltar {
+
+    width: 100%;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+  }
+
+  .galeria {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .foto-card img {
+
+    height: auto;
+
+  }
+
+  .social-item {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
 
 }
