@@ -439,7 +439,10 @@ section p {
   line-height: 1.5;
 
 }
-/* ÍCONES CONTATO */
+
+/* =========================
+   CONTATO COM ÍCONES
+========================= */
 
 .social-item {
 
@@ -459,6 +462,8 @@ section p {
 
   transition: 0.3s;
 
+  border: 1px solid rgba(56, 189, 248, 0.2);
+
 }
 
 .social-item:hover {
@@ -475,6 +480,8 @@ section p {
 
   color: #38bdf8;
 
+  min-width: 30px;
+
 }
 
 .social-item a {
@@ -485,10 +492,20 @@ section p {
 
   font-size: 18px;
 
+  transition: 0.3s;
+
+}
+
+.social-item a:hover {
+
+  color: #38bdf8;
+
 }
 
 .social-item span {
 
   font-size: 18px;
+
+  color: white;
 
 }
