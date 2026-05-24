@@ -1,3 +1,5 @@
+console.log("JS funcionando");
+
 const mascote = document.getElementById("mascote");
 const somMascote = document.getElementById("somMascote");
 
