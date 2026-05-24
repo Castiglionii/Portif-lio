@@ -1,12 +1,9 @@
-console.log("JS funcionando");
+alert("JS funcionando");
 
 const mascote = document.getElementById("mascote");
 const somMascote = document.getElementById("somMascote");
 
-/* volume */
 somMascote.volume = 0.3;
-
-/* tocar som */
 
 mascote.addEventListener("click", () => {
 
