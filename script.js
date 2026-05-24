@@ -1,14 +1,30 @@
-alert("JS funcionando");
+window.addEventListener("DOMContentLoaded", () => {
 
-const mascote = document.getElementById("mascote");
-const somMascote = document.getElementById("somMascote");
+  console.log("JS funcionando");
 
-somMascote.volume = 0.3;
+  const mascote = document.getElementById("mascote");
+  const somMascote = document.getElementById("somMascote");
 
-mascote.addEventListener("click", () => {
+  if (!mascote) {
+    console.log("Mascote não encontrado");
+    return;
+  }
 
-  somMascote.currentTime = 0;
+  if (!somMascote) {
+    console.log("Áudio não encontrado");
+    return;
+  }
 
-  somMascote.play();
+  somMascote.volume = 0.3;
+
+  mascote.addEventListener("click", () => {
+
+    console.log("Clique detectado");
+
+    somMascote.currentTime = 0;
+
+    somMascote.play();
+
+  });
 
 });
