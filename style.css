@@ -566,22 +566,19 @@ section h1 {
 }
 
 .mascote{
-  width: 180px;
+
+  width: clamp(180px, 22vw, 340px);
+
+  cursor: pointer;
 
   image-rendering: pixelated;
 
-  animation:
-    flutuar 3s ease-in-out infinite;
+  animation: dancar 2.5s ease-in-out infinite;
 
   filter:
-    drop-shadow(0 0 10px rgba(56,189,248,0.35));
-}
+    drop-shadow(0 0 12px rgba(56,189,248,0.4));
 
-.mascote-texto{
-  margin-top: 15px;
-
-  color: #94a3b8;
-  font-size: 0.95rem;
+  transition: transform 0.3s ease;
 }
 
 /* animação */
