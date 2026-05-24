@@ -553,3 +553,51 @@ section h1 {
   }
 
 }
+
+.mascote-container{
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.mascote{
+  width: 180px;
+
+  image-rendering: pixelated;
+
+  animation:
+    flutuar 3s ease-in-out infinite;
+
+  filter:
+    drop-shadow(0 0 10px rgba(56,189,248,0.35));
+}
+
+.mascote-texto{
+  margin-top: 15px;
+
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+/* animação */
+
+@keyframes flutuar{
+
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-12px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+
+}
