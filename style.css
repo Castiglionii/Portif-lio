@@ -362,33 +362,53 @@ section h1 {
 
   /* MENU */
 
-  .menu {
+  /* MENU MOBILE */
 
-    flex-direction: column;
+.menu {
 
-    align-items: center;
+  display: flex;
 
-    gap: 10px;
+  flex-direction: row;
 
-    padding: 15px;
+  overflow-x: auto;
 
-  }
+  white-space: nowrap;
 
-  .menu a {
+  justify-content: flex-start;
 
-    width: 100%;
+  gap: 10px;
 
-    max-width: 320px;
+  padding: 12px;
 
-    text-align: center;
+  position: sticky;
 
-    padding: 12px;
+  top: 0;
 
-    background: #1e293b;
+  z-index: 1000;
 
-    border-radius: 10px;
+}
 
-  }
+/* ESCONDE BARRA */
+
+.menu::-webkit-scrollbar {
+
+  display: none;
+
+}
+
+.menu a {
+
+  flex: 0 0 auto;
+
+  padding: 10px 16px;
+
+  background: #1e293b;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+
+}
 
   /* HEADER */
 
