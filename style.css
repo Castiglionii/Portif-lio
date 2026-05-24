@@ -553,7 +553,7 @@ section h1 {
   }
 
 }
-
+/* Mascote*/
 .mascote-container{
   margin-top: 50px;
 
@@ -600,4 +600,9 @@ section h1 {
     transform: translateY(0px);
   }
 
+}
+
+.mascote:hover{
+  transform: scale(1.08);
+  transition: 0.3s;
 }
