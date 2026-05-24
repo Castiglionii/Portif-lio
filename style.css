@@ -234,7 +234,6 @@ section h1 {
   transition: 0.3s;
 
 }
-
 .foto-card:hover {
 
   transform: translateY(-5px);
@@ -462,38 +461,25 @@ section h1 {
 
   }
 
-  /* GALERIA */
+  /* GALERIA MOBILE */
 
-  .galeria {
+.galeria {
 
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    align-items: center;
+  align-items: center;
 
-    gap: 20px;
+}
 
-    width: 100%;
+.foto-card {
 
-  }
+  width: 100%;
 
-  .foto-card {
+  max-width: 320px;
 
-    width: 100%;
-
-    max-width: 320px;
-
-  }
-
-  .foto-card img {
-
-    width: 100%;
-
-    height: auto;
-
-  }
-
+}
   /* CONTATO */
 
   .social-item {
