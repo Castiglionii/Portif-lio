@@ -1,27 +1,18 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.onload = function () {
 
-  const mascote = document.getElementById("mascote");
-  const somMascote = document.getElementById("somMascote");
+  const mascote = document.querySelector(".mascote");
+  const som = document.getElementById("somMascote");
 
-  console.log(mascote);
-  console.log(somMascote);
+  som.volume = 0.3;
 
-  mascote.onclick = async () => {
+  mascote.addEventListener("click", function () {
 
-    try {
+    som.currentTime = 0;
 
-      somMascote.volume = 0.3;
+    som.play();
 
-      await somMascote.play();
+    console.log("clicou no mascote");
 
-      console.log("Som tocando");
+  });
 
-    } catch(err) {
-
-      console.log("Erro ao tocar:", err);
-
-    }
-
-  };
-
-});
+};
